@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva de hotel">
+    <meta name="author" content="Sílvia Suan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservas Divago</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Reservas Divago</h1>
+    <br>
+    <label for="room-type"></label>
+    <p>¿Qué categoría prefiere?</p>
+    <select name="type" id="type">
+        <option value="standard">Estandar</option>
+        <option value="junior suite">Suite Junior</option>
+        <option value="suite">Suite</option>
+    </select><br>
+    <label for="room-size"></label>
+    <p>¿Qué tipo de habitación quiere?</p>
+    <select name="sizes" id="sizes">
+        <option value="single">Individual</option>
+        <option value="double">Doble</option>
+        <option value="triple">Triple</option>
+    </select><br>
+    <label for="days"></label>
+    <p>¿Cuántas noches va a hospedarse?</p>
+    <input type="number" id="days" name="days" min="1">
+    <br>
+    <label for="spa"></label>
+    <p>¿Hará uso del Spa?</p>
+    <input type="checkbox" id="spa" name="Spa">
+    <br>
+    <label for="parking"></label>
+    <p>¿Hará uso del parking?</p>
+    <input type="number" id="parking" name="parking"><br><br>
+    <button id="calculate">Calcular</button><br><br>
+    <span id="total"></span>
+    <script src="app.js"></script>
+</body>
+
+</html>
